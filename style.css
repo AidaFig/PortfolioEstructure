@@ -4,6 +4,8 @@
     box-sizing: border-box;
     list-style: none;
 }
+
+
 header {
     height: 450px;
     width: 100%;
@@ -31,10 +33,20 @@ header p {
 }
 .menu li {
     margin-left: 20px;
+    
+    
+}
+ a {
+    text-decoration: none;
     color: white;
 }
 
+.menu li:hover {
+    text-decoration: underline;
+}
+
 img {
+    cursor:pointer;
     width: 60px;
     height: 60px;
     
