@@ -56,6 +56,7 @@ img {
     margin: 30px auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 1100px;
@@ -67,4 +68,12 @@ img {
 .boxes img {
     width: 300px;
     height: 400px;
+}
+.services {
+    width: 300px;
+    text-align: center;
+    margin: 30px 0px;
+}
+.container-services {
+    background-color: rgb(175, 173, 173);
 }
