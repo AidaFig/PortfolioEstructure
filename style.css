@@ -79,8 +79,9 @@ img {
     margin-bottom: 30px;
 
 }
-.boxes p {
+.boxes p,li {
     text-align: justify;
+    line-height: 30px;
 }
 
 /*Icones redes sociais*/
@@ -107,6 +108,7 @@ img {
     width: 300px;
     text-align: center;
     margin: 30px 0px;
+    padding-bottom: 30px;
 }
 .container-services {
     background-color: #395c5c;
@@ -152,6 +154,9 @@ img {
    justify-content: center;
    align-items: center;
   }
+  .boxes {
+      margin-top: 30px;
+  }
  
   .container-services {
       display: flex;
@@ -174,5 +179,11 @@ img {
   .container-habilidade {
       display: flex;
       flex-direction: row;
+  }
+  .habilidades {
+      border: none;
+  }
+  .skills h2 {
+      padding-top: 30px;
   }
 }
