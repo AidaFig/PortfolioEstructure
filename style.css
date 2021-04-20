@@ -149,24 +149,27 @@ img {
   .container {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
   }
  
-  .boxes {
-      margin: auto;
-      
-  }
   .container-services {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
   }
   .services {
-      margin: auto;
+      height: 200px;
+      padding-top: 30px;
+      border: 1px black dashed;
+      border-radius: 8px;
   }
  
   .container-icons {
       display: flex;
       flex-direction: row;
+      
   }
   .container-habilidade {
       display: flex;
