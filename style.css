@@ -165,11 +165,20 @@ footer {
     bottom: 0;
     background-position: 50% 20%;
 }
-.footerp {
+.footer {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    padding-left: 50px;
+    text-align: center;
+}
+.footer p {
+    padding-top: 30px;
+}
+.footer h3 {
+    color: white;
+}
+.footer h3 {
+    
 }
 
 @media (max-width:590px) {
