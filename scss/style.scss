@@ -16,6 +16,16 @@ $black: #272727;
     list-style: none;
 }
 
+// ---- MIXIN ---- //
+@mixin flexbox ($direction:row, $justify:space-between, $align:center, $wrap: wrap) {
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    
+}
+
 body {
     font-family:'Dosis', sans-serif;
     img {
@@ -43,10 +53,10 @@ header {
            
             li {
                 margin-left: 20px;
-                 
-            }
-            li:hover {
-                text-decoration: underline;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             a {
                 text-decoration: none;
@@ -63,18 +73,14 @@ header {
         color: $white;
         @extend %text-direction;
     }
-
 }
-
 
 .container {
     max-width: 100%;
     margin: 30px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 1100px;
+
+    @include flexbox(row, space-between, initial, wrap);
     
     .boxes {
         width: 300px;
@@ -114,6 +120,7 @@ header {
             }
         }
     }
+
     /*Segunda section*/
     .services {
         width: 300px;
@@ -149,6 +156,7 @@ header {
           }
     }
 }
+
 // -- H2's e background que estão fora do container -- //
 
 .skills h2{
@@ -176,20 +184,17 @@ footer {
     background: url(../imagens/alexandra-nicolae-MKXyRm-pK50-unsplash.jpg) no-repeat;
     bottom: 0;
     background-position: 50% 20%;
-
-    & {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @extend %text-direction;
+    
+    @include flexbox(row, center, center,);
 
         & p {
             padding-top: 30px;
         }
         & h3 {
             color: $white;
+            @extend %text-direction;
         }
-    }
+    
 }
 
 
@@ -200,10 +205,8 @@ footer {
     }
     
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
+        @include flexbox(column, center, center,);
         
         .boxes {
             margin-top: 30px;
