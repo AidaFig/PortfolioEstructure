@@ -1,3 +1,7 @@
+footer, .works-section h2, .container-services h2, .skills h2, .container .habilidades, .container .services, .container .boxes h2, header p, header h1 {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,12 +44,10 @@ header .header-text .menu a {
   color: #fff;
 }
 header h1 {
-  color: white;
-  text-align: center;
+  color: #fff;
 }
 header p {
-  color: white;
-  text-align: center;
+  color: #fff;
 }
 
 .container {
@@ -54,7 +56,6 @@ header p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*align-items: center;*/
   justify-content: space-between;
   width: 1100px;
   /*Icones redes sociais*/
@@ -72,7 +73,6 @@ header p {
   object-fit: cover;
 }
 .container .boxes h2 {
-  text-align: center;
   margin-bottom: 30px;
 }
 .container .boxes p, .container .boxes li {
@@ -95,12 +95,10 @@ header p {
 }
 .container .services {
   width: 300px;
-  text-align: center;
   margin: 30px 0px;
   padding-bottom: 30px;
 }
 .container .habilidades {
-  text-align: center;
   padding-bottom: 10px;
   width: 100px;
   border-bottom: 3px solid #272727;
@@ -120,20 +118,14 @@ header p {
   transform: scale(1.2);
 }
 
-.skills h2 {
-  text-align: center;
-}
-
 .container-services {
   background-color: #395c5c;
 }
 .container-services h2 {
-  text-align: center;
   padding-top: 30px;
 }
 
 .works-section h2 {
-  text-align: center;
   margin-top: 50px;
 }
 
@@ -148,13 +140,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 footer p {
   padding-top: 30px;
 }
 footer h3 {
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 590px) {
@@ -168,8 +159,19 @@ footer h3 {
     justify-content: center;
     align-items: center;
   }
-
-  .boxes {
+  .container .boxes {
+    margin-top: 30px;
+  }
+  .container .services {
+    height: 200px;
+    padding-top: 30px;
+    border: 1px #272727 dashed;
+    border-radius: 8px;
+  }
+  .container .habilidades {
+    border: none;
+  }
+  .container .work {
     margin-top: 30px;
   }
 
@@ -178,13 +180,6 @@ footer h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .services {
-    height: 200px;
-    padding-top: 30px;
-    border: 1px black dashed;
-    border-radius: 8px;
   }
 
   .container-icons {
@@ -197,16 +192,8 @@ footer h3 {
     flex-direction: row;
   }
 
-  .habilidades {
-    border: none;
-  }
-
   .skills h2 {
     padding-top: 30px;
-  }
-
-  .work {
-    margin-top: 30px;
   }
 }
 
