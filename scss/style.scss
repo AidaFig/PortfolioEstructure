@@ -3,9 +3,13 @@ $white: #fff;
 $green: #395c5c;
 $black: #272727;
 
-// ---- EXTEND ---- //
+// ---- EXTENDS ---- //
 %text-direction {
     text-align: center;
+}
+%rows {
+    display: flex;
+    flex-direction: row;
 }
 
 // ---- RESETS ---- //
@@ -29,7 +33,7 @@ $black: #272727;
     align-items: $align;
     flex-wrap: $wrap;
 }
-
+ 
 body {
     font-family:'Dosis', sans-serif;
     img {
@@ -110,9 +114,6 @@ header {
     .container-icons {
         justify-content: flex-start;
         margin: 30px 0px;
-        
-        /*.icons {
-            width: 50px;*/
             
             & img{
                 display: flex;
@@ -121,7 +122,6 @@ header {
                 height: 30px;
             
             }
-        }
     }
 
     /*Segunda section*/
@@ -160,7 +160,7 @@ header {
     }
 }
 
-// -- H2's e background que estão fora do container -- //
+// -- H2's e background que estão fora do container, nao eram pra estar, mas da proxima eu já sei. -- //
 
 .skills h2{
     @extend %text-direction;
@@ -200,7 +200,6 @@ footer {
     
 }
 
-
 @media (max-width:590px) {
 
     header {
@@ -228,21 +227,13 @@ footer {
       }
   }
  
-    .container-services {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
- 
+  //-- classes fora do container paizão --//
     .container-icons {
-      display: flex;
-      flex-direction: row;
+      @extend %rows;
   }
 
     .container-habilidade {
-      display: flex;
-      flex-direction: row;
+      @extend %rows;
     }
 
     .skills h2 {
